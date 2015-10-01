@@ -1,5 +1,2 @@
-with (import <nixpkgs> {}).pkgs;
-let
-  pkg = haskellngPackages.callPackage ./. {};
-in
-  pkg.env
+{ nixpkgs ? import <nixpkgs> {} }:
+           (import ./default.nix { inherit nixpkgs; }).env
