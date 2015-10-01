@@ -1,6 +1,7 @@
 *~
 dist/*
 *.swp
+*.nix
 /.cabal-sandbox
 /cabal.sandbox.config
 cloud-remote.pdf
